@@ -1,0 +1,13 @@
+[2023-10-03T19:27:16.205Z] 
+[2023-10-03T19:27:16.206Z] boost new:read-model UserReadModel --projects User
+[2023-10-03T19:27:16.206Z] Error: Error parsing projection User. Projections must be in the form of <entity name>:<entity id>
+[2023-10-03T19:27:16.206Z]     at projectionParsingError (/usr/local/share/nvm/versions/node/v20.6.1/lib/node_modules/@boostercloud/cli/dist/services/generator/target/parsing.js:56:48)
+[2023-10-03T19:27:16.206Z]     at parseProjection (/usr/local/share/nvm/versions/node/v20.6.1/lib/node_modules/@boostercloud/cli/dist/services/generator/target/parsing.js:40:15)
+[2023-10-03T19:27:16.206Z]     at Array.map (<anonymous>)
+[2023-10-03T19:27:16.206Z]     at parseProjections (/usr/local/share/nvm/versions/node/v20.6.1/lib/node_modules/@boostercloud/cli/dist/services/generator/target/parsing.js:33:57)
+[2023-10-03T19:27:16.206Z]     at run (/usr/local/share/nvm/versions/node/v20.6.1/lib/node_modules/@boostercloud/cli/dist/commands/new/read-model.js:44:260)
+[2023-10-03T19:27:16.206Z]     at ReadModel.run (/usr/local/share/nvm/versions/node/v20.6.1/lib/node_modules/@boostercloud/cli/dist/commands/new/read-model.js:21:20)
+[2023-10-03T19:27:16.206Z]     at ReadModel._run (/usr/local/share/nvm/versions/node/v20.6.1/lib/node_modules/@boostercloud/cli/node_modules/@oclif/command/lib/command.js:43:31)
+[2023-10-03T19:27:16.206Z]     at async Config.runCommand (/usr/local/share/nvm/versions/node/v20.6.1/lib/node_modules/@boostercloud/cli/node_modules/@oclif/config/lib/config.js:173:24)
+[2023-10-03T19:27:16.206Z]     at async Main.run (/usr/local/share/nvm/versions/node/v20.6.1/lib/node_modules/@boostercloud/cli/node_modules/@oclif/command/lib/main.js:28:9)
+[2023-10-03T19:27:16.206Z]     at async Main._run (/usr/local/share/nvm/versions/node/v20.6.1/lib/node_modules/@boostercloud/cli/node_modules/@oclif/command/lib/command.js:43:20)
