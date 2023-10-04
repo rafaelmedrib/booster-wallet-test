@@ -24,7 +24,7 @@ export class User {
   }
 
   @Reduces(WalletLinked)
-  public static reduceWalletLinked(event: WalletLinked, currentUser: User): User {
+  public static reduceWalletLinked(event: WalletLinked, currentUser: User): User {    
     return new User(
       currentUser.id,
       currentUser.name,

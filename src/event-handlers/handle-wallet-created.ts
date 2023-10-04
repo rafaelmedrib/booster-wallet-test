@@ -1,10 +1,11 @@
 import { WalletLinked } from '../events/wallet-linked'
 import { EventHandler } from '@boostercloud/framework-core'
 import { Register } from '@boostercloud/framework-types'
+import { WalletCreated } from '../events/wallet-created'
 
-@EventHandler(WalletLinked)
-export class HandleWalletLinked {
-  public static async handle(event: WalletLinked, register: Register): Promise<void> {
+@EventHandler(WalletCreated)
+export class HandleWalletCreated {
+  public static async handle(event: WalletCreated, register: Register): Promise<void> {
     register.events(new WalletLinked(
       event.walletId,
       event.userId
